@@ -15,15 +15,15 @@ fs.writeFile(fileName,(error,data)=>{
 
     if(error){
 
-        res.writeHead(404,{"content-Type":"test/html"});
+        res.writeHead(404,{"content-Type":"text/html"});
 
         res.end(`404 page not found`);
     }
 
-    res.writeHead(200,{"content-Type":"test/html"});
+    res.writeHead(200,{"content-Type":"text/html"});
 
     res.write(data);
-    
+
     res.end;
 
 
